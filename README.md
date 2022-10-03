@@ -4,10 +4,6 @@
 
 ![image](https://github.com/Jupiter404E/Discord-qrcode-scam/blob/main/temp/discord_gift.png?raw=true)
 
-## Демонстрация
-
-![image](https://user-images.githubusercontent.com/75003671/117522092-fd79ff80-afe3-11eb-938c-23dd68d5927c.gif)
-
 ## Информация
 
 Загрузите последнюю версию [chromedriver](https://chromedriver.chromium.org/downloads "link chromedriver") и замените старый файл `chromedriver.exe` новым. Если вы столкнулись с какими-либо ошибками, прокрутите вниз, чтобы узнать больше об устранении неполадок.
