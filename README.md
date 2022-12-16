@@ -1,6 +1,6 @@
 # Scam QR code on Discord Nitro v1.2
 
-A Python script that automatically generates a discord nitro QR code and gives you access to your Discord account when you scan the QR code. **This scenario demonstrates how people can trick others into scanning their Discord login QR code and gaining access to their account. Use for educational purposes only!**
+Python script that automatically generates a discord nitro QR code and gives you access to the victim's Discord token and account when scanning the QR code. **This script demonstrates how people can trick others into scanning the Discord login QR code and gaining access to their account. Use for educational purposes only!**
 
 ![image](https://github.com/Jupiter404E/Discord-qrcode-scam/blob/main/temp/discord_gift.png?raw=true)
 
@@ -20,7 +20,7 @@ Download the latest version of [chromedriver](https://chromedriver.chromium.org/
 
 5. The QR code is only valid for about 2 minutes. Make sure you send a fresh picture to your victim.
 
-6. When the QR code is scanned, you will be automatically logged into the victim's account.
+6. When the QR code is scanned, you will automatically log into the victim's account and receive their token.
 
 ## Troubleshooting
 
